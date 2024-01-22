@@ -1,0 +1,42 @@
+@TitleFont: #fff;
+
+@BackgroundColor: #fbe5e5;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: @BackgroundColor;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+    width: 100%;
+
+    &-control{
+        display: flex;
+        flex-direction: column;
+        width: 472px;
+
+        label{
+            font-size: large;
+            font-weight: bolder;
+        }
+        input{
+            padding: 4px;
+            width: 100%;
+            font-size: large;
+        }
+        button{
+            padding: 8px;
+            font-weight: bold;
+            font-size: large;
+        }
+    }
+}
